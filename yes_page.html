@@ -1,17 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Knew you would say yes!</title>
     <link rel="stylesheet" href="./yes_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <div class="container">
+    <canvas id="heartCanvas"></canvas>
+    <div class="page-container">
         <h1 class="header_text">Knew you would say yes!</h1>
-        <div class="gif_container">
-            <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmo3c3l5ODh3ZGN6NHhhaDE2Mjg1ZjkwOXczdDFxbWM3dTBtaW9zaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/9XY4f3FgFTT4QlaYqa/giphy.gif">
+        <div class="envelope-wrapper">
+            <div class="envelope" id="envelope">
+                <div class="envelope-flap-top"></div>
+                <div class="envelope-body">
+                    <div class="envelope-side-left"></div>
+                    <div class="envelope-side-right"></div>
+                    <div class="envelope-bottom"></div>
+                    <div class="pocket"></div>
+                </div>
+                <div class="letter">
+                    <div class="letter-header">To <span>Yasmine</span></div>
+                    <div class="letter-content">
+                        <p>Dear YasMine, </p><br>
+                        <p>I love you</p><br>
+                    </div>
+                </div>
+                <div class="hearts-container" id="heartsContainer">
+                    <div class="heart"></div>
+                    <div class="heart"></div>
+                    <div class="heart"></div>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="btn btn-open" id="openBtn">Open</button>
+            <button class="btn btn-close" id="closeBtn">Close</button>
         </div>
     </div>
+    <script src="heart.js"></script>
+    <script src="letter.js"></script>
 </body>
+
 </html>
